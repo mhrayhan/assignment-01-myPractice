@@ -1,0 +1,347 @@
+body{ 
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+section{
+    margin-bottom: 100px;
+    width: 100%;
+    border: 1px solid #000;
+}
+p{
+    font-size: 18px;
+    text-align: justify;
+}
+.flex{
+    display: flex;
+}
+.link-button{
+    text-decoration: none;
+    padding: 15px 40px;
+    background: #ff6868;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+}
+.heading{
+    display: block;
+    height: 129px;
+    margin-top: 200px;
+    margin-bottom: 30px;
+    line-height: 20px;
+    /* border-left: 5px solid #ff6868; */
+    position: relative;
+}
+.heading::before{
+    content: '';
+    background: #ff6868;
+    height: 130px;
+    width: 5px;
+    left: 0;
+    border-radius: 5px;
+    position: absolute;
+}
+
+.heading h1{
+    font-size: 65px;
+    font-weight: 300;
+    padding-left: 15px;
+    padding-top: 11px;
+    color: #202020;
+    font-family: 'DM Serif Display', serif;
+}
+.heading h1 span{
+    color: #ff6868;
+}
+.heading-text{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #3b3b3b;
+}
+.scroll-text{
+    margin-top: 40px;
+    font-size: 20px;
+    color: #3b3b3b;
+}
+.header-img{
+    width: 100%;
+    margin-left: 35%;
+}
+.left {
+    width: 50%;
+}
+.right{
+    width: 40%;
+}
+.mission-heading h1{
+    text-align: center;
+    font-size: 50px;
+     color: #000531;
+     font-weight: 800;
+}
+.mission-heading h1 span{
+    color: #ff6868;
+}
+.mission-child {
+    background: #85ff8b;
+    margin-left: 2%;
+    border-radius: 20px;
+    padding: 20px 20px;
+    flex: 1;
+    box-shadow: 10px 10px 10px #f3f2f2;
+}
+.mission-child:first-child {
+    margin-left: 0;
+}
+.mission-child p{
+    font-size: 17px;
+    text-align: justify;
+}
+.mission-child h2{
+    font-weight: 800;
+    font-size: 30px;
+}
+.mission-child img{
+    width: 160px;
+}
+#mission-child-1{
+    background: #fcffcb;
+}
+#mission-child-2{
+    background: #fff8d1;
+}
+#mission-child-3{
+    background: #fff1e9;
+}
+
+.dev-left{
+    width: 40%;
+}
+.dev-left img{
+    width: 100%;
+}
+.dev-right{
+    padding-left: 5%;
+    width: 60%;
+}
+.dev-right h1{
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 30px;
+    padding-top: 15px;
+}
+.dev-right p{
+    margin-bottom: 35px;
+}
+
+#dev-right{
+    padding-left: 0;
+    padding-right: 5%;
+}
+#contact{
+    margin: 0;
+    background: cornsilk;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    background-image: url(images/shape-8.png);
+    background-repeat: no-repeat;
+    background-size: 150px;
+    background-position: -80px;
+    background-position-y: -80px;
+}
+.contact{
+    text-align: center;
+}
+.info{
+    margin-bottom: 25px;
+}
+.info input{
+    width: 400px;
+    height: 30px;
+    margin-right: 5px;
+    outline: none;
+    font-size: 16px;
+}
+textarea{
+    width: 822px;
+    height: 100px;
+    outline: none;
+    font-size: 16px;
+}
+.send-msg{
+    margin-left: 50%;
+    transform: translate(-50%);
+    border: none;
+    margin-top: 10px;
+    padding: 10px 50px;
+    font-size: 16px;
+}
+
+.footer{
+    background: #050920;
+    text-align: center;
+    height: 140px;
+    width: 100%;
+    padding-top: 10px;
+}
+.footer h1{
+    color: #fff;
+    padding-top: 20px;
+    font-family: 'Lobster Two', cursive;
+    margin: 0;
+}
+.footer h1 span{
+    color: #ff6868;
+}
+.footer p{
+    color: rgb(230, 230, 230);
+    text-align: center;
+    font-size: 15px;
+}
+#footer{
+    margin: 0;
+    width: 100%;
+}
+
+#development-section{
+    background-image: url(images/shape-1.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 250px;
+    background-position-x: 60px;
+    background-position-y: 60px;
+}
+#global{
+    background-image: url(images/shape-1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 200px;
+    background-position-x: 1210px;
+    background-position-y: 300px;
+    padding-bottom: 50px;
+}
+
+
+/* =============Mobile Responsive============= 
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+*/
+
+
+@media only screen and (max-width:600px){
+    .container{
+        max-width: 570px;
+    }
+    section{
+        margin-bottom: 30px;
+    }
+    .header{
+        flex-direction: column;
+        flex-basis: 100%;
+        padding: 0 5px;
+    }
+    .left{
+        width:100%;
+    }
+    .right{
+        width: 100%;
+    }
+    .heading {
+        margin-top: 26px;
+        line-height: 20px;
+    }
+    .heading h1 {
+        font-size: 50px;
+    }
+    .heading::before {
+        height: 111px;
+    }
+    .heading-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .link-button {
+        padding: 10px 40px;
+        margin-left: 25%;
+    }
+    .header-img {
+        margin-left: 0;
+    }
+    .mission-heading h1 {
+        font-size: 30px;
+    }
+    .mission{
+        flex-direction: column;
+        flex-basis: 100%;
+        padding: 0 10px;
+        margin: 0;
+    }
+    .mission-child{
+        margin-bottom: 10px;
+        margin-left: 0;
+        text-align: center;
+    }
+    .dev-both{
+        flex-direction: column;
+        padding: 0 5px;
+        padding-bottom: 20px;
+    }
+    .dev-left{
+        width: 100%;
+    }
+    .dev-right{
+        width: 100%;
+        text-align: center;
+        display: block;
+        padding-left: 0;
+    }
+    .dev-right h1 {
+        font-size: 30px;
+        line-height: 5px;
+        
+    }
+    .read-more{
+        margin-left: 0%;
+    }
+    p{
+        font-size: 16px;
+    }
+    .dev-global{
+        flex-direction: column-reverse;
+    }
+    .flex-reverse{
+        flex-direction: column-reverse;
+    }
+    textarea {
+        width: 95%;
+    }
+    .info input {
+        width: 95%;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .info {
+        margin-bottom: 5px;
+    }
+    .send-msg{
+        font-size: 15px;
+        margin-left: 50%;
+    }
+    .footer p {
+        font-size: 10px;
+    }
+    .footer {
+        height: 110px;
+    }
+
+}
